@@ -1,0 +1,36 @@
+{
+  "name": "vine-tools",
+  "version": "1.0.1",
+  "description": "Common web tools and methods",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VineWeb/vine-tools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./es/index.mjs"
+    },
+    "./es": "./es/index.mjs",
+    "./lib": "./lib/index.js",
+    "./es/*.mjs": "./es/*.mjs",
+    "./es/*": "./es/*.mjs",
+    "./lib/*.js": "./lib/*.js",
+    "./lib/*": "./lib/*.js",
+    "./*": "./*"
+  },
+  "bugs": {
+    "url": "https://github.com/VineWeb/vine-tools/issues"
+  },
+  "homepage": "https://github.com/VineWeb/vine-tools#readme",
+  "dependencies": {
+    "@types/lodash": "^4.14.195",
+    "loadsh": "^0.0.4"
+  }
+}
